@@ -50,6 +50,13 @@ http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
 •	check version
 	docker-compose --version
 
+Start Docker see :
+Hyper-V feature is not enabled.
+Do you want to enable it for Docker to be able to work properly?
+Your computer will restart automatically.
+Note: VirtualBox will no longer work.
+
+Answer Y to enable it.
 
 
 

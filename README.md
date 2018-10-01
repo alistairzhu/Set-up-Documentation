@@ -104,3 +104,15 @@ Using Docker for a java project
 https://www.youtube.com/watch?v=FlSup_eelYE
 https://www.youtube.com/watch?v=wCTTHhehJbU
 
+Docker command:
+--------------------
+
+Start Docker QuickStart terminal (or PowerShell)
+docker ps
+docker images
+Docker run hello-world
+docker run -it --name james ubuntu
+Ctrl+pq  (to go back to Power Shell without stop container)
+docker attach james  (to return docker)
+"exit" will stop the container!
+docker rmi -f hello-world (delete image)

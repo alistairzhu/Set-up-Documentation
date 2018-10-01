@@ -1,4 +1,13 @@
-Install Docker:
+	
+
+Install Docker Toolbox on Windows10 HOME  (without HyperV)
+-----------------------------------	
+https://docs.docker.com/toolbox/toolbox_install_windows/#step-2-install-docker-toolbox
+	
+
+
+
+Install Docker on EC2 Ubuntu:
 -------------------------------------
 Technical setup for the CFDev 
 In order to follow along with instruction during the course you'll need a couple tools installed prior to the class. The instructors will explain the technology we will be using in detail, but some of it can take a while to set up properly so installing it ahead of time is necessary. 
@@ -93,3 +102,5 @@ Check Version
 Using Docker for a java project
 -----------------------------------------
 https://www.youtube.com/watch?v=FlSup_eelYE
+https://www.youtube.com/watch?v=wCTTHhehJbU
+

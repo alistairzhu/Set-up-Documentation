@@ -116,3 +116,21 @@ Ctrl+pq  (to go back to Power Shell without stop container)
 docker attach james  (to return docker)
 "exit" will stop the container!
 docker rmi -f hello-world (delete image)
+
+Build and run, see document at:
+https://github.com/nodejs/docker-node/blob/master/README.md#how-to-use-this-image
+
+
+Create .Dockerfile at the root folder of project:
+
+FROM node:6-onbuild
+EXPOSE 80 
+
+docker build -t hello-system  -f ./.Dockerfile .
+In the root folder run: docker run -it -p 1337:80 --name hyi hello-system
+Then in browser open  localhost:1337
+
+When repeat "Run", need to delete previoue "Run".
+docker start aaa
+docker ps
+docker rm -f aaa

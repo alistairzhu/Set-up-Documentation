@@ -140,5 +140,26 @@ docker rm -f aaa
 docker run -it -p 3000:80 -v //C/Projects/docker/sample/hello-system/.:/usr/src/app --name hi hello-system
 Then in browser open  localhost:3000    (can see live change)
 
+Create Docker for a java application:
+
+In POM file , 
+<artifactId>api-testing</artifactId>
+    <version>1.0-snapshot</version>
+
+Create a .jar file api-testing-1.0-snapshot.jar at target folder: 
+>mvn package 	
+
+Create Dockerfile at root:
+
+from openjdk:10
+add target/api-testing-1.0-snapshot.jar api-testing-1.0-snapshot.jar
+expose 8085
+entrypoint ["java", "-jar","api-testing-1.0-snapshot.jar"]
+
+Build an image from a Dockerfile and run the image:
+>docker build -f Dockerfile -t api-testing-1.0-snapshot .
+>docker run -p 8085:8085 api-testing-1.0-snapshot
+
+
 
 

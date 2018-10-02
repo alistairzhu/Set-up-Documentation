@@ -130,7 +130,15 @@ docker build -t hello-system  -f ./.Dockerfile .
 In the root folder run: docker run -it -p 1337:80 --name hyi hello-system
 Then in browser open  localhost:1337
 
-When repeat "Run", need to delete previoue "Run".
+After making any change, NO need to rebuild, just  need to sync up windows folder with unix. 
+In Docker > Setting make "Share drive c:" 
+Then , need to delete previoue "Run".
 docker start aaa
 docker ps
 docker rm -f aaa
+
+docker run -it -p 3000:80 -v //C/Projects/docker/sample/hello-system/.:/usr/src/app --name hi hello-system
+Then in browser open  localhost:3000    (can see live change)
+
+
+

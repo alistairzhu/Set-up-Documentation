@@ -158,7 +158,7 @@ entrypoint ["java", "-jar","api-testing-1.0-snapshot.jar"]
 
 Build an image from a Dockerfile and run the image:
 >docker build -f Dockerfile -t api-testing-1.0-snapshot .
->docker run -p 8085:8085 api-testing-1.0-snapshot
+>docker run -p 8085:8085 --rm api-testing-1.0-snapshot
 
 
 

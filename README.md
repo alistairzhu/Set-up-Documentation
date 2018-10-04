@@ -162,4 +162,9 @@ Build an image from a Dockerfile and run the image:
 
 
 
+Android Studio "Design view not show new added elements:
+Edit File build.gradel (model app), update one line in dependencies:  "implementation 'com.android.support:appcompat-v7:28.0.0-alpha1'"
 
+
+Docker for Android :
+https://medium.com/@elye.project/intro-to-docker-building-android-app-cb7fb1b97602
